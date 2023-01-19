@@ -1,0 +1,165 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to bottom, #3699ff 0%,#ffffff 55%,#ffffff 70%,#fff 100%);
+  font-family: 'Josefin Sans', sans-serif;
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.thankcont {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  
+  background-image: url(../Grass.png);
+  background-size: 50%;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  overflow: hidden;
+}
+
+.thank-msg {
+  width: 100%;
+  position: relative;
+  top: 35%;
+  padding: 0 28%;
+  box-sizing: border-box;
+}
+
+.thank-msg h1 {
+  font-size: 40px;
+  margin: 0;
+  color: #555555;
+}
+
+.thank-msg p {
+  font-size: 22px;
+  line-height: 28px;
+  color: #555555;
+}
+
+.birdwalk {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+}
+
+.bird-container {
+  position: absolute;
+  left: -10%;
+  -webkit-animation-name: fly-right-one;
+  animation-name: fly-right-one;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.bird-container--one img {
+  width: 150px;
+  position: absolute;
+  bottom: 18px;
+  left:0;
+}
+
+
+.bird-container--two img {
+  width: 160px;
+  position: absolute;
+  bottom: 18px;
+  right:0;
+}
+
+
+.bird-container--three img {
+  width: 190px;
+  position: absolute;
+  bottom: 18px;
+  left:calc(50% - 95px);
+}
+.bird-container--one {
+  -webkit-animation-duration: 35s;
+  animation-duration: 35s;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  width: 250px;
+  height: 200px;
+}
+
+.bird-container--two {
+  -webkit-animation-duration: 35s;
+  animation-duration: 35s;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  width: 250px;
+  height: 200px;
+}
+
+.bird-container--three {
+  -webkit-animation-duration: 34s;
+  animation-duration: 34s;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  width: 400px;
+  height: 200px;
+}
+
+
+@-webkit-keyframes fly-cycle {
+  100% {
+    background-position: -900px 0;
+  }
+}
+
+@keyframes fly-cycle {
+  100% {
+    background-position: -900px 0;
+  }
+}
+
+@keyframes fly-right-one {
+  0% {
+    -webkit-transform: translateY(0vh) translateX(-10vw) scale(0.6);
+    transform: translateY(0vh) translateX(-10vw) scale(0.6);
+  }
+
+  10% {
+    -webkit-transform: translateY(0vh) translateX(10vw) scale(0.6);
+    transform: translateY(0vh) translateX(10vw) scale(0.6);
+  }
+
+  20% {
+    -webkit-transform: translateY(0vh) translateX(30vw) scale(0.6);
+    transform: translateY(0vh) translateX(30vw) scale(0.6);
+  }
+
+  30% {
+    -webkit-transform: translateY(0vh) translateX(50vw) scale(0.6);
+    transform: translateY(0vh) translateX(50vw) scale(0.6);
+  }
+
+  40% {
+    -webkit-transform: translateY(0vh) translateX(70vw) scale(0.6);
+    transform: translateY(0vh) translateX(70vw) scale(0.6);
+  }
+
+  50% {
+    -webkit-transform: translateY(0vh) translateX(90vw) scale(0.6);
+    transform: translateY(0vh) translateX(90vw) scale(0.6);
+  }
+
+  60% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+
+  100% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+    transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+}
